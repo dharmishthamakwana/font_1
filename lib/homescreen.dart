@@ -1,276 +1,137 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-class Font1 extends StatefulWidget {
-  const Font1({Key? key}) : super(key: key);
+class Photo4 extends StatefulWidget {
+  const Photo4({Key? key}) : super(key: key);
 
   @override
-  State<Font1> createState() => _Font1State();
+  State<Photo4> createState() => _Photo4State();
 }
 
-class _Font1State extends State<Font1> {
+class _Photo4State extends State<Photo4> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Scaffold(
-        body: Padding(
-          padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Text("----",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-                  Text("----",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                          color: Colors.grey)),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    "BACK",
-                    style: TextStyle(
+        child: Scaffold(
+          backgroundColor: Color(0xffCACACA),
+          body: Container(
+            margin: EdgeInsets.all(13),
+            height: double.infinity,
+            width: double.infinity,
+            child: Stack(
+              children: [
+                Padding(
+                  padding:EdgeInsets.only(left: 70,top: 25),
+                  child: Text("BACK",style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.black),),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 30,top: 26),
+                  child: Container
+                    (
+                    width: 13,
+                    child: Divider(
                       color: Colors.black,
-                      fontWeight: FontWeight.bold,
+                      thickness: 2,
                     ),
-                  ),
-                  Spacer(),
-                  Text(
-                    "GRID VIEW",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Icon(
-                    Icons.verified,
-                    size: 18,
-                  )
-                ],
-              ),
-              SizedBox(
-                height: 40,
-              ),
-              Text(
-                "January 2020",
-                style: GoogleFonts.actor(
-                  textStyle: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 40,
-                    color: Colors.black,
                   ),
                 ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Container(
-                child: Column(
-                  children: [
-                    Text(
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna \n \naliqua. Ut enim ad minim veniam,",
-                      style: TextStyle(
-                          fontSize: 12,
-                          letterSpacing: 1,
-                          color: Colors.black,
-                          wordSpacing: 2),
+                Padding(
+                  padding: EdgeInsets.only(left: 40,top: 26),
+                  child: Container
+                    (
+                    width: 25,
+                    child: Divider(
+                      color: Colors.black26,
+                      thickness: 2,
                     ),
-                  ],
+                  ),
                 ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Text("15",
-                          style: GoogleFonts.aclonica(
-                              color: Colors.black,
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold)),
-                      Text(
-                        "SAT",
-                        style: GoogleFonts.purplePurse(
-                          fontSize: 20,
-                        ),
-                      ),
-                      SizedBox(
-                        height: 130,
-                      ),
-                      Text(
-                        "16",
-                        style: GoogleFonts.aclonica(
-                            color: Colors.black,
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold),
-                      ),
-                      Text(
-                        "SUN",
-                        style: GoogleFonts.purplePurse(
-                          fontSize: 20,
-                        ),
-                      ),
-                      SizedBox(
-                        height: 120,
-                      ),
-                      Text(
-                        "22",
-                        style: GoogleFonts.aclonica(
-                            color: Colors.black,
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold),
-                      ),
-                      Text(
-                        "SAT",
-                        style: GoogleFonts.purplePurse(
-                          fontSize: 20,
-                        ),
-                      ),
-                    ],
+                Padding(
+                  padding:  EdgeInsets.only(top: 23,left: 200),
+                  child: Text("GRID VIEW",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black,fontSize: 15),),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 24,left: 285),
+                  child: Icon(Icons.apps_sharp,size: 18,color: Colors.black,),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 27,top: 100),
+                  child: Text("January 2020",style: TextStyle(fontSize: 25,color: Colors.black,fontWeight: FontWeight.bold),),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 150,left: 30),
+                  child: Text("Explore the incoming world-class productions in\nthe Fjord Operahaus and reserve or buy the ticket.\nFor questions contact us at +47 46 70 40 32",style: TextStyle(fontSize: 12),),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 30,top: 220),
+                  child: Text("15\nSAT",style: TextStyle(fontSize: 25,color: Colors.black,fontWeight: FontWeight.bold),),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 240,left: 110),
+                  child: SizedBox(
+                    width: 200,
+                    child: Divider(
+                      color: Colors.black,
+                      thickness: 1,
+                    ),
                   ),
-                  SizedBox(
-                    width: 30,
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 115,top: 270),
+                  child: Text("Anna Karenina",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 18),),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 300,left: 120),
+                  child: Text("Anna Karenina has been called the greatest\nwork of literature ever written. Then\nNorwegian National Ballet is once again\ndancing Leo Tolstoy's engaging and bitter...\n\nBUY TICKETS    READ MORE",style: TextStyle(fontSize: 10),),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 430,left: 110),
+                  child: SizedBox(
+                    width: 200,
+                    child: Divider(
+                      color: Colors.black,
+                      thickness: 1,
+                    ),
                   ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        width: 300,
-                        decoration: BoxDecoration(
-                          border: Border(
-                            bottom: BorderSide(color: Colors.black,width: 1),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Text(
-                        "Anna Karenina",
-                        style: GoogleFonts.hahmlet(
-                            color: Colors.black,
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Text(
-                        "Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore\nmagna aliqua.",
-                        style: TextStyle(fontSize: 10, letterSpacing: 2),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Row(children: [
-                        Text(
-                          "BUY TICKETS",
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: Colors.red,
-                          ),
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
-                        Text(
-                          "READ MORE",
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: Colors.black,
-                          ),
-                        ),
-                      ]),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Container(
-                        width: 380,
-                        decoration: BoxDecoration(
-                          border: Border(
-                            bottom: BorderSide(color: Colors.black, width: 1.5),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Text(
-                        "Orbo Novo",
-                        style: GoogleFonts.hahmlet(
-                            color: Colors.black,
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Text(
-                        "Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod \ntempor incididunt\nut labore et dolore\nmagna aliqua.",
-                        style: TextStyle(fontSize: 12, letterSpacing: 2),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Row(children: [
-                        Text(
-                          "BUY TICKETS",
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: Colors.red,
-                          ),
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
-                        Text(
-                          "READ MORE",
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: Colors.black,
-                          ),
-                        ),
-                      ]),
-                      SizedBox(
-                        height: 40,
-                      ),
-                      Container(
-                        width: 275,
-                        decoration: BoxDecoration(
-                          border: Border(
-                            bottom: BorderSide(color: Colors.black, width: 1.5),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Text(
-                        "Rigoletto",
-                        style: GoogleFonts.hahmlet(
-                            color: Colors.grey,
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ],
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 30,top: 410),
+                  child: Text("16\nSUN",style: TextStyle(fontSize: 25,color: Colors.black,fontWeight: FontWeight.bold),),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 115,top: 460),
+                  child: Text("Orbo Novo",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 18)),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 490,left: 120),
+                  child: Text("Orbo Novo premiered in 2009 in USA that\nwas open to the world. A few later, the\npolitical climate has made the work's\nexploration of polarised America...\nBUY TICKETS\n\nREAD MORE",style: TextStyle(fontSize: 10),),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 630,left: 110),
+                  child: SizedBox(
+                    width: 200,
+                    child: Divider(
+                      color: Colors.black,
+                      thickness: 1,
+                    ),
                   ),
-                ],
-              ),
-            ],
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 30,top: 610),
+                  child: Text("22\nSAT",style: TextStyle(fontSize: 25,color: Colors.black38,fontWeight: FontWeight.bold)),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 115,top: 660),
+                  child: Text("Rigoletto",style: TextStyle(color: Colors.black38,fontWeight: FontWeight.bold,fontSize: 18)),
+                )
+              ],
+            ),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              border: Border.all(color: Colors.black,width: 7),
+              borderRadius: BorderRadius.circular(30),
+            ),
           ),
-        ),
-      ),
-    );
+        ));
   }
 }
